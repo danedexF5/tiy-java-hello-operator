@@ -26,19 +26,19 @@ public class HelloOperator {
 
         // output "result" to the console
 
-            System.out.println(84 + (result / 10));
+            System.out.println(result);
 
-        // create a new variable named "expected". Set this to 134.4.
+       // create a new variable named "expected". Set this to 134.4.
 
             double expected = 134.4;
 
         // create a variable named "matches". Compare "result" and "expected". If they're the same then set "matches" to true.
 
-
+            boolean matches = result == expected;
 
         // output whether or not the two variables match
 
-            System.out.println("result == expected = matches");
+            System.out.println(matches);
 
         // reset "result" to 125.1
 
@@ -50,27 +50,27 @@ public class HelloOperator {
 
         // add 0.1 to "result"
 
-            result +=0.1;
+            result = result + 0.1;
 
         // subtract 0.1 from "expected"
 
-            expected -=0.1;
+            expected = expected - 0.1;
 
         // Compare "result" and "expected". If they're the same then set "matches" to true.
 
-           boolean matches = true;
+           matches = result == expected;
 
         // output the value of "result", the value of "expected", and the whether or not they are equal. (EG: "result=expected? matches")
 
+            System.out.println(result + "=" + expected + "? " + matches);
 
-
-        // Start with 56. Multiply it by the sum of 50 and 26. Subtract 6 from that. Divide this by the remainder left over when you divide 723 by 23. Set "result" to the resulting value.
+       // Start with 56. Multiply it by the sum of 50 and 26. Subtract 6 from that. Divide this by the remainder left over when you divide 723 by 23. Set "result" to the resulting value.
 
             result = ((56 * (50+26)) - 6) / (723%23);
 
-        // output "result"
+       // output "result"
 
-            System.out.println(425);
+            System.out.println(result);
 
         // Add 1203 and 72. Divide the total by 3 and set "expected" to the result.
 
@@ -78,23 +78,23 @@ public class HelloOperator {
 
         // output "expected"
 
-            System.out.println(425);
+            System.out.println(expected);
 
         // Output true if "result" is greater than "expected"
 
-            System.out.println(false);
+            System.out.println(result > expected);
 
         // Output true if "result" is less than "expected"
 
-            System.out.println(false);
+            System.out.println(result < expected);
 
         // Output true if "result" is equal to "expected"
 
-            System.out.println(true);
+            System.out.println(result == expected);
 
         // Output false if either "result" or "expected" are equal to 425
 
-            System.out.println(false);
+            System.out.println(result == 425);
 
 
     }
