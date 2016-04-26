@@ -94,7 +94,7 @@ public class HelloOperator {
 
         // Output false if either "result" or "expected" are equal to 425
 
-            System.out.println(result == 425);
+            System.out.println(!(result == 425) || !(expected == 425));
 
 
     }
